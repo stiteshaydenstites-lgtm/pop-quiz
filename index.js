@@ -1,44 +1,75 @@
 
 let score = 0;
-//const input = 0;
-//const input = prompt("How many legs does a cow have");
-//let answer;
-console.log("how many legs does a cow have?");
-const answer = prompt("how many legs does a cow have?");
-console.log("a: 1 \n b: 2 \n c: 3 \n d: 4 \n");
-//alert(`cows have ${input} legs`);
-alert(`your answer was ${answer}`);
-if(answer=== "d"){
-  console.log("Correct");
-  score++;
-}
-else{
-  console.log("Incorrect");
-  //score--;
-}
-//console.log(`your score is ${score}`);  
 
-answer = prompt("how many states are in the united states?");
-console.log("a: 50 \n b: 52 \n c: 51 \n d: 69 \n");
-alert(`your answer was ${answer}`);
-//console.log("First Question");
-if(answer==="a"){
-  console.log("Correct");
-  score++;
+//console.log("how many legs does a cow have?");
+const Question = prompt(`how many legs does a cow have? 
+  [1] 1 
+  [2] 2 
+  [3] 3 
+  [4] 4`);
+const answer = Number(Question);
+if(Number.isNan(answer)){
+  alert("your answer must be a number");
 }
-else{
-  console.log("Incorrect");
+else if(answer>=1 && answer<=4){
+  alert(`your answer was ${answer}`);
+  if(answer=== 4){
+    alert("Correct");
+    score++;
+  }
+  else{
+    alert("Incorrect");
+  }
+
+}else{
+  alert("answer must be between 1 and 4");
+  
+}
+ 
+Question = prompt(`how many states are in the united states?
+  [1] 50 
+  [2] 52  
+  [3] 51
+  [4] 69 `);
+answer = Number(Question);
+
+alert(`your answer was ${answer}`);
+
+if(Number.isNan(answer)){
+  alert("your answer must be a number");
+}
+else if(answer>=1 && answer<=4){
+  alert(`your answer was ${answer}`);
+  if(answer=== 1){
+    alert("Correct");
+    score++;
+  }
+
+}else{
+  alert("answer must be between 1 and 4");
   //score--;
 }
-answer = prompt("what is the longest international border?");
-console.log("a: The United States and Canada \n b: China and Russia \n c: United States and Mexico \n d: The United Kingdom and Ireland");
+//answer = prompt("");
+Question = prompt(` what is the longest international border?
+  [1] The United States and Canada
+  [2] China and Russia
+  [3] United States and Mexico
+  [4] The United Kingdom and Ireland`);
+answer = Number(Question);
 alert(`your answer was ${answer}`);
-if(answer==="a"){
-  console.log("Correct");
-  score++;
+
+if(Number.isNan(answer)){
+  alert("your answer must be a number");
 }
-else{
-  console.log("Incorrect");
+else if(answer>=1 && answer<=4){
+  alert(`your answer was ${answer}`);
+  if(answer=== 1){
+    alert("Correct");
+    score++;
+  }
+
+}else{
+  alert("answer must be between 1 and 4");
   //score--;
 }
 alert(`your score was ${score}`);
