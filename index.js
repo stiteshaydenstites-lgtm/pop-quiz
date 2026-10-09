@@ -14,7 +14,7 @@ if(answer=== "d"){
 }
 else{
   console.log("Incorrect");
-  score--;
+  //score--;
 }
 //console.log(`your score is ${score}`);  
 
@@ -28,7 +28,7 @@ if(answer==="a"){
 }
 else{
   console.log("Incorrect");
-  score--;
+  //score--;
 }
 answer = prompt("what is the longest international border?");
 console.log("a: The United States and Canada \n b: China and Russia \n c: United States and Mexico \n d: The United Kingdom and Ireland");
@@ -39,7 +39,18 @@ if(answer==="a"){
 }
 else{
   console.log("Incorrect");
-  score--;
+  //score--;
 }
 console.log(`your score was ${score}`);
+if(score===3){
+  console.log("You answered everything correctly!");
+
+}
+else if(score===0){
+  console.log("you got everything wrong!");
+}
+else{
+  console.log("You did ok!");
+}
+
 
