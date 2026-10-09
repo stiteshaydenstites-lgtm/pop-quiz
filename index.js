@@ -41,16 +41,16 @@ else{
   console.log("Incorrect");
   //score--;
 }
-console.log(`your score was ${score}`);
+alert(`your score was ${score}`);
 if(score===3){
-  console.log("You answered everything correctly!");
+  alert("You answered everything correctly!");
 
 }
 else if(score===0){
-  console.log("you got everything wrong!");
+  alert("you got everything wrong!");
 }
 else{
-  console.log("You did ok!");
+  alert("You did ok!");
 }
 
 
